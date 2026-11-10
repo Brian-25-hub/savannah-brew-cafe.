@@ -1,0 +1,140 @@
+
+/* GENERAL STYLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #6F4E37;
+    --cream: #F5E9DA;
+    --orange: #D9822B;
+    --dark: #2B1B12;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--orange);
+    border-radius: 5px;
+}
+
+/* MENU PAGE HEADING */
+.page-heading {
+    background-color: var(--brown);
+    color: var(--white);
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.page-heading h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    font-size: 17px;
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 45px 8%;
+    overflow-x: auto;
+}
+
+.menu-section h2 {
+    color: var(--brown);
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* MENU TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    min-width: 550px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: var(--cream);
+}
+
+tbody tr:hover {
+    background-color: #F0D8BE;
+}
+
+/* MENU PRICES */
+.price {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+/* MENU DESCRIPTION */
+.menu-description {
+    text-align: center;
+    padding: 20px;
+    color: var(--dark);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
